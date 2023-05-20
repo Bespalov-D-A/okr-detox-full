@@ -1,0 +1,62 @@
+version: '3'
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./client:/app
+    ports:
+      - 8080:3000
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    volumes:
+      - ./server/config:/server/app/config
+      - ./server/src:/server/app/src
+      - ./server/package.json:/server/package.json
+      - ./server/yarn.lock:/server/yarn.lock
+      - ./server/.env:/server/app/.env
+      - ./server/public/uploads:/server/app/public/uploads
+    ports:
+      - 3000:1337
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - db
+        #    command: tail -f /dev/null
+
+  db:
+    image: postgres
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 4000:5432
+    volumes:
+      - ./meme-db-data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 5001:8080
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    depends_on:
+      - client
+      - server
+
+volumes:
+  meme-db-data:
+    external: true
+
