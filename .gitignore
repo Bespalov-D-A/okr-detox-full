@@ -2,3 +2,4 @@
 server/
 client/
 meme-db-data/*
+!meme-db-data/.gitkeep
