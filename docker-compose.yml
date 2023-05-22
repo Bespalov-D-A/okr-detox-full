@@ -16,12 +16,12 @@ services:
       context: ./server
       dockerfile: Dockerfile
     volumes:
-      - ./server/config:/server/app/config
-      - ./server/src:/server/app/src
+      - ./server/config:/server/config
+      - ./server/src:/server/src
       - ./server/package.json:/server/package.json
       - ./server/yarn.lock:/server/yarn.lock
-      - ./server/.env:/server/app/.env
-      - ./server/public/uploads:/server/app/public/uploads
+      - ./server/.env:/server/.env
+      - ./server/public/uploads:/server/public/uploads
     ports:
       - 3001:1337
     environment:
