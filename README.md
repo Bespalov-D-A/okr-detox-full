@@ -6,7 +6,7 @@ The .env files, databases, and some sensitive data are included in the repositor
 - Install docker on your computer
 - Run command: ```git clone git@github.com:Bespalov-D-A/okr-detox-full.git okr -b dev```
 - unpackage the archive okr-db-data.zip to the root directory of the project  
-- run ```docker-compose buld``` command  
+- run ```docker-compose build``` command  
 - run ```docker-compose up``` command  
 - ✨Magic ✨
 
