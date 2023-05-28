@@ -1,0 +1,22 @@
+.content {
+  padding-top: 24px;
+  width: 100%;
+}
+
+.form-wrap {
+  min-width: 320px;
+  height: 100%;
+  @media screen and (max-width: 728px) {
+    height: 520px;
+  }
+  @media screen and (max-height: 621px) {
+    height: 320px;
+  }
+  @media screen and (max-height: 521px) {
+    height: 220px;
+  }
+}
+
+.form-wrap > * {
+  margin-bottom: 12px;
+}

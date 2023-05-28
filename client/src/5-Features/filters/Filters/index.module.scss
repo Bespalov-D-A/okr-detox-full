@@ -1,0 +1,14 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+  & > *:first-child {
+    margin-right: 32px;
+  }
+  @media screen and (max-width: 728px) {
+    flex-flow: column wrap;
+    & > *:first-child {
+      margin-right: 12px;
+      margin-bottom: 2px;
+    }
+  }
+}

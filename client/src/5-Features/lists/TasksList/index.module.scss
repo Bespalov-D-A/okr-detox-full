@@ -1,0 +1,43 @@
+.wrap {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  padding-bottom: 64px;
+  @media screen and (max-width: 728px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.title-wrap {
+}
+
+.title {
+  text-align: center;
+}
+
+.title-parent {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: 92px;
+}
+
+.list-title {
+  padding: 12px 24px 12px;
+  margin-bottom: 16px;
+}
+
+.list {
+  flex: 1;
+}
+
+.filters {
+  margin-bottom: 24px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,9 @@
+.dial {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  @media screen and (max-width: 728px) {
+    bottom: 12px;
+    right: 12px;
+  }
+}

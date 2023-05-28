@@ -1,0 +1,27 @@
+.content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 728px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 24px;
+    top: 60px;
+  }
+}
+
+.btn-wrap {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 24px;
+  & > *:first-child {
+    margin-right: 12px;
+  }
+}
+
+.desc {
+  padding: 24px;
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "singularName": "task",
+    "pluralName": "tasks",
+    "displayName": "task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "task_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::task-type.task-type"
+    },
+    "time": {
+      "type": "string"
+    },
+    "task_list": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::task-list.task-list",
+      "inversedBy": "tasks"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "tasks"
+    }
+  }
+}

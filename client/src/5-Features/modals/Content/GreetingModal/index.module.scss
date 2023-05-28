@@ -1,0 +1,35 @@
+.greeting {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.description {
+  height: 200px;
+  margin-bottom: 36px;
+  @media screen and (max-width: 720px) and (min-height: 660px) {
+    height: 400px;
+  }
+  @media screen and (max-height: 600px) {
+    height: 300px;
+  }
+  @media screen and (max-height: 500px) {
+    height: 200px;
+  }
+  @media screen and (max-height: 400px) {
+    height: 100px;
+  }
+}
+
+.btn-wrap {
+  flex-grow: 1;
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.lnk {
+  color: var(--color-primary);
+}
+.author {
+  padding: 18px 0;
+}

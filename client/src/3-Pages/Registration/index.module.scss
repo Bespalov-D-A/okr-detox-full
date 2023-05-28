@@ -1,0 +1,23 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+}
+
+.form {
+  padding-top: 24px;
+}
+
+.logo-wrap {
+  display: inline;
+  cursor: pointer;
+}
+
+.lnk {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}

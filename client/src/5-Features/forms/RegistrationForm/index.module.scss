@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  justify-content: stretch;
+  flex-flow: column wrap;
+  max-width: 400px;
+  padding-top: 24px;
+  margin: 0 auto;
+}
+
+.btn-wrap {
+  text-align: right;
+}
+
+.btn-wrap > * {
+  min-width: 140px;
+}
+
+.google {
+  margin-right: 24px;
+  background: #3ed431;
+}
+
+.or {
+  margin-top: 24px;
+  text-align: center;
+}

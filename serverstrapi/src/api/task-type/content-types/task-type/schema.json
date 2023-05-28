@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "task_types",
+  "info": {
+    "singularName": "task-type",
+    "pluralName": "task-types",
+    "displayName": "task_type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60,
+      "minLength": 1
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "task_types"
+    }
+  }
+}

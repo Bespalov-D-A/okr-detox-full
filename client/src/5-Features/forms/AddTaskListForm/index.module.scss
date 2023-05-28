@@ -1,0 +1,13 @@
+.wrap {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  padding-top: 24px;
+  & > *:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.or {
+  text-align: center;
+}

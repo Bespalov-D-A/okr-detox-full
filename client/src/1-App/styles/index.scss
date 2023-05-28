@@ -1,0 +1,22 @@
+@import "./reset.css";
+@import "./vars.scss";
+@import "./mui.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Raleway";
+  letter-spacing: 0.1em;
+  color: var(--color-v-dark);
+  background: var(--color-gray0);
+}
+
+#root {
+  height: 100%;
+  & > :first-child {
+    height: 100%;
+  }
+}

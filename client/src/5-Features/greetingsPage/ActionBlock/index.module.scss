@@ -1,0 +1,35 @@
+.actions {
+  width: 100%;
+  max-width: 600px;
+  flex: 1;
+  @media screen and (max-width: 728px) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.wrap {
+  display: flex;
+  .btn:first-child {
+    margin-right: 12px;
+  }
+  .btn {
+    background: var(--color-primary-dark);
+  }
+
+  @media screen and (max-width: 728px) {
+    flex-flow: column wrap;
+  }
+}
+
+.btn {
+  width: 100%;
+  min-width: 200px;
+  padding: 12px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  &.what {
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+}

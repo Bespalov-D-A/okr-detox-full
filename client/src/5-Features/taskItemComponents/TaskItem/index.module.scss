@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  padding-top: 24px;
+  margin-bottom: 18px;
+}
+
+.bar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 12px;
+  right: 24px;
+  height: 24px;
+  font-size: 12px;
+  border-bottom: solid 1px var(--color-gray6);
+	@media screen and (max-width: 524px) {
+		align-items: flex-start;
+		flex-flow: column wrap;
+		height:36px;
+    padding-top: 2px;
+	}
+
+}
+
+.time {
+  flex: 1;
+  text-align: right;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.success {
+  font-weight: bold;
+  color: var(--color-success-dark);
+}
+
+.list-type {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.list-type__btn {
+  width: 100%;
+  margin-bottom: 12px;
+  @media screen and (min-width: 520px) {
+    flex: 1;
+    &:first-child {
+      margin-right: 32px;
+    }
+  }
+}

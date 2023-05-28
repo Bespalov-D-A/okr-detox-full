@@ -1,0 +1,30 @@
+.menu {
+  position: relative;
+  width: 420px;
+  height: 100%;
+  max-width: 420px;
+  padding-bottom: 82px;
+  @media screen and (max-width: 480px) {
+    width: 320px;
+  }
+}
+
+.wrap {
+  position: relative;
+  width: 420px;
+  flex-grow: 1;
+  height: 300px;
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
+  @media screen and (max-height: 420px) {
+    height: 100px;
+  }
+}
+
+.exit {
+  position: absolute;
+  bottom: 24px;
+  left: 12px;
+  right: 12px;
+}

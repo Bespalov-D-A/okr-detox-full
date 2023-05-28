@@ -13,15 +13,15 @@ services:
 
   serverstrapi:
     build:
-      context: ./server
+      context: ./serverstrapi
       dockerfile: Dockerfile
     volumes:
-      - ./server/config:/server/config
-      - ./server/src:/server/src
-      - ./server/package.json:/server/package.json
-      - ./server/yarn.lock:/server/yarn.lock
-      - ./server/.env:/server/.env
-      - ./server/public/uploads:/server/public/uploads
+      - ./serverstrapi/config:/server/config
+      - ./serverstrapi/src:/server/src
+      - ./serverstrapi/package.json:/server/package.json
+      - ./serverstrapi/yarn.lock:/server/yarn.lock
+      - ./serverstrapi/.env:/server/.env
+      - ./serverstrapi/public/uploads:/server/public/uploads
     ports:
       - 3001:1337
     environment:
@@ -30,14 +30,14 @@ services:
       - db
 
   db:
-    image: postgres
+    image: postgres:14.5
     restart: always
     env_file:
       - .env
     ports:
       - 4001:5432
     volumes:
-      - ./meme-db-data:/var/lib/postgresql/data
+      - ./okr-db-data:/var/lib/postgresql/data
 
   adminer:
     image: adminer

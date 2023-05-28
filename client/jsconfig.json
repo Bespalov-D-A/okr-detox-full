@@ -1,0 +1,16 @@
+
+
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "checkJs": true,
+    "allowJs": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "src/**/*",
+    "/node_modules/**/*"
+  ]
+}

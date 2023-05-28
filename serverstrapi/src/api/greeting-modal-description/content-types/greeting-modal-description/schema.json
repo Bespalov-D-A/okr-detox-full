@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "greeting_modal_descriptions",
+  "info": {
+    "singularName": "greeting-modal-description",
+    "pluralName": "greeting-modal-descriptions",
+    "displayName": "greeting modal description"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 80
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 1000
+    }
+  }
+}

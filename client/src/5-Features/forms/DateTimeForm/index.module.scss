@@ -1,0 +1,19 @@
+.wrap {
+  padding-top: 24px;
+  & :not(:first-child) {
+    width: 100%;
+  }
+  & :nth-child(2) {
+    margin-bottom: 6px;
+  }
+  @media screen and (max-width: 600px) {
+    & > * {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 12px;
+}

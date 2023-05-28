@@ -1,0 +1,25 @@
+.wrap {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 24px;
+}
+
+.ok {
+  border-radius: 6px;
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.fields {
+  display: flex;
+  align-items: flex-end;
+  & > *:first-child {
+    width: 100%;
+  }
+  & > *:not(:last-child) {
+    margin-right: 6px;
+  }
+  & > *:last-child {
+    margin-right: 0;
+  }
+}

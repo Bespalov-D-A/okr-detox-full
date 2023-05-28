@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "phone_lists",
+  "info": {
+    "singularName": "phone-list",
+    "pluralName": "phone-lists",
+    "displayName": "phone list"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}
