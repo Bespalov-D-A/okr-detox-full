@@ -7,7 +7,11 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - ./client:/app
+      - ./client/jest.config.js:/app/jest.config.js
+      - ./client/jsconfig.json:/app/jsconfig.json
+      - ./client/src:/app/src
+      - ./client/public:/app/public
+
     ports:
       - 8081:3000
 
@@ -19,7 +23,6 @@ services:
       - ./serverstrapi/config:/server/config
       - ./serverstrapi/src:/server/src
       - ./serverstrapi/package.json:/server/package.json
-      - ./serverstrapi/yarn.lock:/server/yarn.lock
       - ./serverstrapi/.env:/server/.env
       - ./serverstrapi/public/uploads:/server/public/uploads
     ports:
