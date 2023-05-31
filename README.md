@@ -1,7 +1,10 @@
 # okr-detox
 ###  TODO app for people with OKR syndrome  
     
-The .env files, databases, and some sensitive data are included in the repository for easy reference.
+The .env files, databases, and some sensitive data are included in the repository for easy reference.  
+I also used a local data store for ease and speed of development.  
+I would never use this way of storing data in real development.  
+  
 #####  INSTALL & RUN
 - Install docker on your computer
 - Run command: ```git clone git@github.com:Bespalov-D-A/okr-detox-full.git okr -b dev```
