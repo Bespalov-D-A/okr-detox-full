@@ -1,5 +1,7 @@
 # okr-detox
 ###  TODO app for people with OKR syndrome  
+  
+demonstration: http://ovz5.googlonator.n03kn.vps.myjino.ru/
     
 The .env files, databases, and some sensitive data are included in the repository for easy reference.  
 I also used a local data store for ease and speed of development.  
